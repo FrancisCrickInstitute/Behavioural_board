@@ -7822,6 +7822,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <sheets>
 <sheet>
 <plain>
+<text x="-22.86" y="100.33" size="1.778" layer="91">Missing logic level shifter encoder</text>
 </plain>
 <instances>
 <instance part="IC2" gate="A1" x="-251.46" y="193.04" smashed="yes">

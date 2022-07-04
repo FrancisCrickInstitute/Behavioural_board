@@ -8155,9 +8155,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="-109.22" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="8/TX3"/>
-<wire x1="-269.24" y1="111.76" x2="-283.21" y2="111.76" width="0.1524" layer="91"/>
-<label x="-283.21" y="111.76" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="1/TX1/T/MISO1"/>
+<wire x1="-269.24" y1="129.54" x2="-283.21" y2="129.54" width="0.1524" layer="91"/>
+<label x="-283.21" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PIN_3" class="0">
@@ -8549,56 +8549,38 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="TRIG_2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="7/RX3"/>
-<wire x1="-269.24" y1="114.3" x2="-283.21" y2="114.3" width="0.1524" layer="91"/>
-<label x="-283.21" y="114.3" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="X2" gate="G$1" pin="1"/>
 <wire x1="-106.68" y1="118.11" x2="-116.84" y2="118.11" width="0.1524" layer="91"/>
 <label x="-109.22" y="119.38" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="-269.24" y1="127" x2="-283.21" y2="127" width="0.1524" layer="91"/>
+<label x="-283.21" y="127" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TRIG_3" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="6/PWM"/>
-<wire x1="-269.24" y1="116.84" x2="-283.21" y2="116.84" width="0.1524" layer="91"/>
-<label x="-283.21" y="116.84" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="X3" gate="G$1" pin="1"/>
 <wire x1="-116.84" y1="95.25" x2="-105.41" y2="95.25" width="0.1524" layer="91"/>
 <label x="-109.22" y="96.52" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="3/T/PWM"/>
+<wire x1="-269.24" y1="124.46" x2="-283.21" y2="124.46" width="0.1524" layer="91"/>
+<label x="-283.21" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TRIG_4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="5"/>
-<wire x1="-269.24" y1="119.38" x2="-283.21" y2="119.38" width="0.1524" layer="91"/>
-<label x="-283.21" y="119.38" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="X4" gate="G$1" pin="1"/>
 <wire x1="-116.84" y1="74.93" x2="-105.41" y2="74.93" width="0.1524" layer="91"/>
 <label x="-109.22" y="76.2" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$19" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="4/T/PWM"/>
 <wire x1="-269.24" y1="121.92" x2="-283.21" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="3/T/PWM"/>
-<wire x1="-269.24" y1="124.46" x2="-283.21" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="2"/>
-<wire x1="-269.24" y1="127" x2="-283.21" y2="127" width="0.1524" layer="91"/>
+<label x="-283.21" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAP_OUT_2" class="0">
@@ -8637,12 +8619,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="-283.21" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="1/TX1/T/MISO1"/>
-<wire x1="-269.24" y1="129.54" x2="-283.21" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="ENCODER_A" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="13/SCK/LED"/>
@@ -8665,6 +8641,34 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="JP1" gate="A" pin="3"/>
 <wire x1="-19.05" y1="125.73" x2="0" y2="125.73" width="0.1524" layer="91"/>
 <label x="-8.89" y="125.73" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LICK_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="5"/>
+<wire x1="-269.24" y1="119.38" x2="-283.21" y2="119.38" width="0.1524" layer="91"/>
+<label x="-283.21" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LICK_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="6/PWM"/>
+<wire x1="-269.24" y1="116.84" x2="-283.21" y2="116.84" width="0.1524" layer="91"/>
+<label x="-283.21" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LICK_3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="7/RX3"/>
+<wire x1="-269.24" y1="114.3" x2="-283.21" y2="114.3" width="0.1524" layer="91"/>
+<label x="-283.21" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LICK_4" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="8/TX3"/>
+<wire x1="-269.24" y1="111.76" x2="-283.21" y2="111.76" width="0.1524" layer="91"/>
+<label x="-283.21" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
