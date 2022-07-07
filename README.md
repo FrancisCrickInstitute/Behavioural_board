@@ -9,37 +9,7 @@ This piece of hardware is a Teensy 3.2, Teensy LC or Teensy 4 [1] breakout board
 The value of the capacitive sensor emitter is 1MΩ and the receiver digital pin has a 1kΩ resistance value to avoid an accidental electric shock [5]. The value of the high resistance value resistor can be changed to higher values in order to increase sensitivity.
 
 # R9-R12 Calculation example (Transistor base current)
-The solenoid valve used for the design is the Lee company model LHDA0533215H. The current needed on the transistor collector has been calculated using the power and the resistance from the manufacturer specifications [4].
- 
-P_valve=550 mW  R_valve=46 Ω
-
-P_valve=I_valve^2*R_valve
-
-I_valve=√(P_valve/R_valve )=√((550 mW)/(46 Ω))
-
-I_valve=109 mA
-
-Base-Ccollector 337 NPN Transistor
-
-h_FE=100    I_C=100mA    V_(CE(ON))=1.2V   
-
-I_B=I_C/h_FE =(100 mA)/100=1mA
-
-Base-Emitter mesh
-
--TTL+I_B R+V_(CE(ON))=0
-
--3.3V+(1 mA)R+1.2V=0
-
-R1=2.1V/1mA=2.1kΩ
-
-Collector-Emitter mesh
-
--V_cc+R_valve I_C+V_CE=0
-
--3.3V+46Ω 100mA+V_CE=0
-
-V_CE=1.3V
+The solenoid valve used for the design is the Lee company model LHDA0533215H. The current needed on the transistor collector has been calculated using the power and the resistance from the manufacturer specifications [4]. Different solenoid valves may require changing the transistor base resistor. More details on "R9-R12 Calculation example (Transistor base).pdf"
 
 # Limitations
 
