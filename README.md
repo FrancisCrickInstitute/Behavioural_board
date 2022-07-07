@@ -12,20 +12,24 @@ The value of the capacitive sensor emitter is 1MΩ and the receiver digital pin 
 The solenoid valve used for the design is the Lee company model LHDA0533215H. The current needed on the transistor collector has been calculated using the power and the resistance from the manufacturer specifications [4].
  
 P_valve=550 mW  R_valve=46 Ω
+
 P_valve=I_valve^2*R_valve
 I_valve=√(P_valve/R_valve )=√((550 mW)/(46 Ω))
 I_valve=109 mA
 
 Base-Ccollector 337 NPN Transistor
+
 h_FE=100    I_C=100mA    V_(CE(ON))=1.2V   
 I_B=I_C/h_FE =(100 mA)/100=1mA
 
 Base-Emitter mesh
+
 -TTL+I_B R+V_(CE(ON))=0
 -3.3V+(1 mA)R+1.2V=0
 R1=2.1V/1mA=2.1kΩ
 
 Collector-Emitter mesh
+
 -V_cc+R_valve I_C+V_CE=0
 -3.3V+46Ω 100mA+V_CE=0
 V_CE=1.3V
@@ -37,9 +41,13 @@ If you are using Teensy LC Pin 1 does not have interrupt capability, therefore T
 # References
 
 [1] 	"https://www.pjrc.com/teensy/teensy31.html". 
+
 [2] 	"https://github.com/PaulStoffregen/CapacitiveSensor". 
+
 [3] 	B. Williams, A. Speed and B. Haider, "A novel device for real-time measurement and manipulation of licking behavior in head-fixed mice," Journal of Neurophisiology, vol. 120, pp. 2975-2987, 2018. 
+
 [4] 	"https://www.theleeco.com/products/electro-fluidic-systems/solenoid-valves/control-valves/lhd-series/3-port/ported/". 
+
 [5] 	"https://www.pjrc.com/teensy/td_libs_CapacitiveSensor.html". 
 
 
