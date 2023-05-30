@@ -13,7 +13,7 @@ The solenoid valve used for the design is the Lee company model LHDA0533215H. Th
 
 # Limitations
 
-If you are using Teensy LC Pin 1 does not have interrupt capability, therefore Trigger 1 cannot be used using interrupts.
+If you are using Teensy LC Pin 1 does not have interrupt capability, therefore Trigger 1 cannot be used using interrupts. The DAC BNC connector is wired with to A14 of Teensy 3.2  and A12 of LC so it cannot be used with the Teensy 4.0.
 
 # References
 
